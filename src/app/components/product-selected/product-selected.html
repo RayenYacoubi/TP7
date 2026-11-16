@@ -1,0 +1,6 @@
+<h2>Produit sélectionné</h2>
+
+@if (product()) {
+    <pre class="bg-light p-3 border rounded">{{product()|json}}</pre>
+}
+<a routerLink="/products" class="btn btn-secondary">Retour</a>
